@@ -8,7 +8,7 @@ CPPFLAGS	= $(CFLAGS) -march=native -O2 -pipe
 
 HEADERS		= includes/
 
-SRCS =	srcs/main.c srcs/utils.c
+SRCS =	srcs/main.c srcs/utils.c srcs/init.c srcs/monitoring.c srcs/philo.c
 
 OBJS = $(SRCS:.c=.o)
 
