@@ -9,8 +9,7 @@ void	ft_init_philo(t_philo *philo, t_table *table, char **argv, int id)
 	philo->max_eat = table->max_eat;
 	philo->philo_count = table->philo_count;
 	philo->id = id + 1;
-	philo->end = &table->end;
-	// philo->print = &table->print;
+	philo->print = table->print;
 	philo->time = table->time;
 	philo->forks[0] = &table->forks[id];
 	philo->forks[1] = &table->forks[(id + 1) % table->philo_count];
@@ -30,6 +29,7 @@ int	ft_init_table(int argc, char **argv, t_table *table)
 	else
 		table->max_eat = -1;
 	table->forks = malloc(sizeof(pthread_mutex_t) * table->philo_count);
+	table->print = malloc (sizeof(pthread_mutex_t));
 	table->time = malloc (sizeof(pthread_mutex_t));
 	while (i < table->philo_count)
 	{
@@ -37,9 +37,8 @@ int	ft_init_table(int argc, char **argv, t_table *table)
 		i++;
 	}
 	i = 0;
-	// pthread_mutex_init(table->print, NULL);
+	pthread_mutex_init(table->print, NULL);
 	pthread_mutex_init(table->time, NULL);
-	table->end = 0;
 	while (i < table->philo_count)
 	{
 		ft_init_philo(&table->philo[i], table, argv, i);
