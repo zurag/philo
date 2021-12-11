@@ -1,5 +1,5 @@
-#ifndef PHILO_H
-# define PHILO_H
+#ifndef PHILO_BONUS_H
+# define PHILO_BONUS_H
 
 #include <stdio.h>
 #include <unistd.h>
@@ -7,6 +7,9 @@
 #include <pthread.h>
 #include <sys/time.h>
 #include <string.h>
+#include <semaphore.h>
+#include <fcntl.h>
+
 
 typedef struct s_philo{
 	int				id;
