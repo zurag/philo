@@ -1,4 +1,4 @@
-NAME		= philo_bonus
+NAME		= philo
 CC			= gcc
 RM			= rm -f
 

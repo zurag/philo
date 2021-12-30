@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: zurag <zurag@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/30 19:00:13 by zurag             #+#    #+#             */
-/*   Updated: 2021/12/30 19:00:43 by zurag            ###   ########.fr       */
+/*   Created: 2021/12/30 18:23:45 by zurag             #+#    #+#             */
+/*   Updated: 2021/12/30 18:24:56 by zurag            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/philo_bonus.h"
+#include "../includes/philo.h"
 
 long	ft_time(void)
 {

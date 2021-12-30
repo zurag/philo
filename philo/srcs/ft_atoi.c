@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: zurag <zurag@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/30 18:55:20 by zurag             #+#    #+#             */
-/*   Updated: 2021/12/30 19:09:43 by zurag            ###   ########.fr       */
+/*   Created: 2021/12/30 18:18:31 by zurag             #+#    #+#             */
+/*   Updated: 2021/12/30 18:20:29 by zurag            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/philo_bonus.h"
+#include "../includes/philo.h"
 
 static int	ft_ret_sign(int sign)
 {
